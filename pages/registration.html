@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/ecommerce.css">
+    <script src="/js/login.js"></script>
+
+</head>
+<body>
+    <div class="registration">
+        <table>
+            <h1>REGISTER HERE</h1>
+            <br><br>
+            <tbody>
+                <tr>
+                <td><label>User name :</label></td>
+                <td><input type="text" id="name"  placeholder="name"/></td>
+                </tr>
+
+                <tr>
+                <td><label>User Email :</label></td>
+                <td><input type="email" id="email"  placeholder="xyz@gmail.com"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>User Password:</label></td>
+                    <td><input type="password" id="password" placeholder="******"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit"  onclick="genotp()"> Generate OTP </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>User OTP:</label></td>
+                    <td><input type="number" class="form-control" id="otp" placeholder="Enter OTP" name="otp"></td>
+                </tr>   
+                
+                <tr>
+                    <td><button type="button" id="verify" onclick="register()">Register</button></td>
+                </tr>
+               
+                
+            </tbody>
+        </table>  
+    </div> 
+</body>
+</html>
+
